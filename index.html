@@ -8,6 +8,27 @@
 </head>
 <body>
 
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">🤖 AI for Students</a>
+      <div class="nav-links">
+        <a href="#part-1">Home</a>
+        <a href="#part-2">What is AI</a>
+        <a href="#part-3">How It Works</a>
+        <a href="#part-4">AI Around You</a>
+        <span class="nav-auth-links">
+          <a href="login.html" class="nav-btn nav-btn-outline">Login</a>
+          <a href="register.html" class="nav-btn nav-btn-filled">Register</a>
+        </span>
+        <span class="nav-user-menu" style="display:none;">
+          <span class="nav-user-name"></span>
+          <a href="#" class="nav-btn nav-btn-outline nav-logout">Logout</a>
+        </span>
+      </div>
+    </div>
+  </nav>
+
   <!-- Part 1 — Hero -->
   <section id="part-1">
     <div class="container hero-content">
@@ -120,6 +141,9 @@
     </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script>var supabaseCreateClient = supabase.createClient;</script>
   <script src="script.js"></script>
+  <script src="auth.js"></script>
 </body>
 </html>
